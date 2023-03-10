@@ -1,0 +1,153 @@
+.wrapper {
+  overflow: hidden;
+  height: auto;
+}
+
+.wrapper .row-wrapper {
+  overflow: inherit;
+  height: inherit;
+}
+
+.wrapper .row-wrapper .col-wrapper {
+  overflow: inherit;
+  min-height: 100vh;
+  padding: 2em 5em;
+}
+
+.wrapper .row-wrapper .col-wrapper .figure {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .row-wrapper .col-wrapper .figure img {
+  width: 250px;
+  height: auto;
+}
+
+.wrapper .row-wrapper .col-wrapper .header {
+  overflow: hidden;
+  padding: 1em;
+  text-align: center;
+}
+
+.wrapper .row-wrapper .col-wrapper .header h4 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.wrapper .row-wrapper .col-wrapper .add__items {
+  overflow: hidden;
+  padding: 2em;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2em;
+}
+
+.wrapper .row-wrapper .col-wrapper .add__items input {
+  background-color: white;
+  width: 35vh;
+  padding: 1.5em;
+  border-radius: 12px;
+}
+
+.wrapper .row-wrapper .col-wrapper .add__items button {
+  border-radius: 12px;
+  padding: 1.2em;
+}
+
+.wrapper .row-wrapper .col-wrapper .show__items {
+  width: 100%;
+  height: auto;
+  padding: 2em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 1em;
+  flex-wrap: wrap;
+  column-gap: 1em;
+}
+
+.wrapper .row-wrapper .col-wrapper .show__items .each__item {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1em 2em;
+  height: auto;
+  column-gap: 3em;
+}
+
+.wrapper .row-wrapper .col-wrapper .show__items .each__item div {
+  overflow: hidden;
+}
+
+.wrapper .row-wrapper .col-wrapper .show__items .each__item div button {
+  padding: 1.2em;
+  border-radius: 12px;
+}
+
+.wrapper .row-wrapper .col-wrapper .show__items .each__item:hover {
+  background-color: #f9fbf2;
+}
+
+.wrapper .row-wrapper .col-wrapper .remove__btn {
+  overflow: hidden;
+  padding: 1em;
+  text-align: center;
+}
+
+.wrapper .row-wrapper .col-wrapper .remove__btn button {
+  padding: 1.2em;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 476px) {
+  .wrapper .row-wrapper .col-wrapper {
+    padding: 2em 3em;
+  }
+  .wrapper .row-wrapper .col-wrapper .header h4 {
+    font-size: 1.7em;
+  }
+  .wrapper .row-wrapper .col-wrapper .add__items {
+    height: 20vh;
+  }
+  .wrapper .row-wrapper .col-wrapper .add__items {
+    padding: 0em;
+  }
+
+  .wrapper .row-wrapper .col-wrapper .show__items {
+    margin-bottom: 1em;
+    padding: 0;
+  }
+
+  .wrapper .row-wrapper .col-wrapper .show__items .each__item {
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 1em !important;
+    word-break: break-word;
+    overflow: hidden !important;
+    padding: 1em;
+    flex-direction: column;
+  }
+
+  .wrapper .row-wrapper .col-wrapper .show__items .each__item div {
+    width: 23vw !important;
+    text-align: end;
+    width: min-content;
+    overflow: hidden;
+  }
+
+  .wrapper .row-wrapper .col-wrapper .show__items .each__item div button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f5e5fc;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-color) !important;
+  font-family: "Times New Roman", Times, serif;
+}
